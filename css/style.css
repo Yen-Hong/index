@@ -1,8 +1,9 @@
         header {
             width: 100%;
             position: fixed;
+            top: 0;
             background: #253559;
-            z-index: 999;
+            z-index: 5000;
         }
 
         .navbar {
