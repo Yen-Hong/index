@@ -1,0 +1,44 @@
+/* 主色 */
+.main-color {
+    color: #253559; 
+}
+
+/* 輔色 */
+.sec-color {
+    color: #F4B13E;
+}
+
+/* 黑 */
+.black {
+    color: #000000;
+}
+
+/* 白 */
+.white {
+    color: #FFFFFF;
+}
+
+/* 棕色 */
+.brown {
+    color: #88654A;
+}
+
+/* 淺灰 */
+.light-grey {
+    color: #B1B1B1;
+}
+
+/* 深灰 */
+.dark-grey {
+    color: #646464;
+}
+
+/* 金 */
+.gold {
+    color: #EDCA5F;
+}
+
+/* 銅 */
+.copper {
+    color: #C99678;
+}
