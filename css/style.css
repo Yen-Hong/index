@@ -135,11 +135,14 @@
     
             .footer-col {
                 display: flex;
-                flex-direction: row;
-                gap: 5rem;
-                flex-wrap: wrap;
+                /* flex-direction: row; */
+                 gap: 12rem; /* 原本5rem改成12rem相似figma間距 */
+                /* flex-wrap: wrap; */
                 margin: auto;
-    
+            }
+
+            .footer-last-text{
+                padding: 0.5rem;
             }
         }
     
@@ -153,7 +156,19 @@
         .footer-endcontent {
             max-width: 40rem;
         }
+
+        .footer-top-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        /* 參考figma修改文字間距 */
+        .footer-left-content-text{
+            line-height: 28px;
+        }
         
+        .footer-top-hr{
+            width: 100%;
+        }
     
         .footer-icon {
             display: flex;
@@ -162,7 +177,10 @@
         }
     
         .footer-box {
-            margin-top: 30px;
+            /* 參考figma修改間距 margin-top */
+            margin-top: -40px;
+            line-height: 28px;
+            /* 參考figma修改間距 line-height */
             ul {
             list-style-type: none;
     
