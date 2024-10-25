@@ -40,6 +40,11 @@
         display: none;
       }
     }
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
   }
   .contain {
     gap: 1.2rem;
