@@ -1,13 +1,9 @@
-main {
-  margin-top: 94px;
-}
-
 header {
   width: 100%;
   position: fixed;
   top: 0;
   background: #253559;
-  z-index: 5000;
+  z-index: 2000;
 }
 
 .navbar {
