@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.PT-reserve {
+  margin-top: 94px;
+  /* 側邊欄佔位 */
+  /* 右側區塊 */
+}
+.PT-reserve .sidebar {
+  background: #ccc;
+  height: 300vh;
+}
+@media (max-width: 768px) {
+  .PT-reserve .sidebar {
+    display: none;
+  }
+  .PT-reserve .title {
+    display: none;
+  }
+  .PT-reserve .navbutton {
+    text-align: center;
+  }
+}
+.PT-reserve .right-block {
+  height: 300vh;
+}
+.PT-reserve .right-block .reserve-card {
+  margin-top: 10rem;
+  background: white;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  /* 下拉明細卡 */
+}
+.PT-reserve .right-block .reserve-card .navbutton {
+  text-align: end;
+}
+@media (max-width: 430px) {
+  .PT-reserve .right-block .reserve-card .navbutton {
+    text-align: center;
+  }
+}
+.PT-reserve .right-block .reserve-card .detail-card .title {
+  background: #5c6880;
+}
+@media (max-width: 430px) {
+  .PT-reserve .right-block .reserve-card .detail-card .status {
+    display: block;
+  }
+}

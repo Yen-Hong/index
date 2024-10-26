@@ -1,93 +1,111 @@
+@charset "UTF-8";
 footer {
-    color: white;
-    width: 100%;
-    background: #253559;
-
-    .footer-section {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        flex-wrap: wrap
-    }
-
-    .footer-col {
-        display: flex;
-        flex-direction: row;
-        gap: 5em;
-        /* 原本5rem改成12rem相似figma間距 */
-        flex-wrap: wrap;
-        margin: auto;
-    }
-
-    .footer-last-text {
-        padding: 0.5rem;
-    }
+  color: white;
+  width: 100%;
+  background: #253559;
+}
+footer .footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer .footer-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5em;
+  /* 原本5rem改成12rem相似figma間距 */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+footer .footer-last-text {
+  padding: 0.5rem;
 }
 
 .footer-wrapper {
-    padding: 10px 56px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 14px;
+  padding: 10px 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  font-size: 14px;
 }
 
 .footer-endcontent {
-    max-width: 40rem;
+  max-width: 40rem;
 }
 
 .footer-top-wrapper {
-    display: flex;
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* 參考figma修改文字間距 */
 .footer-left-content-text {
-    line-height: 28px;
+  line-height: 28px;
 }
 
 .footer-top-hr {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-icon {
-    display: flex;
-    margin-top: 1rem;
-    gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .footer-box {
-    /* 參考figma修改間距 margin-top */
-    margin-top: -40px;
-    line-height: 28px;
-
-    /* 參考figma修改間距 line-height */
-    ul {
-        list-style-type: none;
-
-        li {
-            margin-bottom: 10px;
-
-        }
-
-        .title {
-            padding-left: 20px;
-            margin-bottom: 20px;
-            font-size: 16px;
-            position: relative;
-
-            &::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 10%;
-                /* 調整線的上方距離 */
-                height: 80%;
-                /* 調整線的長度 */
-                border-left: solid 5px #F4B434;
-                border-radius: 20px;
-            }
-        }
-    }
+  /* 參考figma修改間距 margin-top */
+  margin-top: -40px;
+  line-height: 28px;
+  /* 參考figma修改間距 line-height */
+}
+.footer-box ul {
+  list-style-type: none;
+}
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+.footer-box ul .title {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  position: relative;
+}
+.footer-box ul .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  /* 調整線的上方距離 */
+  height: 80%;
+  /* 調整線的長度 */
+  border-left: solid 5px #f4b434;
+  border-radius: 20px;
 }

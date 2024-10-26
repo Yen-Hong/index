@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 100%;
   position: fixed;
@@ -10,9 +11,15 @@ header {
   height: 94px;
   margin: 0 auto;
   padding: 0 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 992px) {
@@ -20,96 +27,98 @@ header {
     padding: 0 56px 0 30px;
   }
 }
-
 .navbar-leftbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
-  align-items: center;
-
-  .navbar-logo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar-leftbtn .navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  width: 100px;
+}
+.navbar-leftbtn .navbar-rwd-listbar {
+  display: none;
+  cursor: pointer;
+}
+.navbar-leftbtn .navbar-rwd-listbar:hover svg path {
+  fill: #b1b1b1;
+}
+@media (max-width: 992px) {
+  .navbar-leftbtn .navbar-rwd-listbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 20px;
-    width: 100px;
-  }
-
-  .navbar-rwd-listbar {
-    display: none;
-    cursor: pointer;
-
-    &:hover {
-      svg {
-        path {
-          fill: #b1b1b1;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 992px) {
-    .navbar-rwd-listbar {
-      display: flex;
-    }
   }
 }
 
 .navbar-rightbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-
-  .navbar-member,
-  .navbar-cart {
-    background: none;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    /* 手形鼠標 */
-    width: 30px;
-
-    &:hover {
-      svg {
-        path {
-          fill: #b1b1b1;
-        }
-      }
-    }
-  }
+}
+.navbar-rightbtn .navbar-member,
+.navbar-rightbtn .navbar-cart {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  /* 手形鼠標 */
+  width: 30px;
+}
+.navbar-rightbtn .navbar-member:hover svg path,
+.navbar-rightbtn .navbar-cart:hover svg path {
+  fill: #b1b1b1;
 }
 
 .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 36px;
-
-  a {
-    font-size: 16px;
-    text-decoration: none;
-    position: relative;
-
-    &:visited {
-      color: white;
-    }
-
-    /* 底線 */
-    &:hover::after {
-      content: "";
-      display: block;
-      width: 50%;
-      /* 底線依照原始比例寬度*/
-      height: 5px;
-      /* 粗細調整 */
-      background-color: #f4b434;
-      position: absolute;
-      left: 50%;
-      /* 置中 */
-      transform: translateX(-50%);
-      /* 使其居中 */
-      bottom: -8px;
-      /* 距離文字底部的位置 */
-      border-radius: 10px;
-      /* 圓滑的邊角 */
-    }
-  }
+}
+.navbar-list a {
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  /* 底線 */
+}
+.navbar-list a:visited {
+  color: white;
+}
+.navbar-list a:hover::after {
+  content: "";
+  display: block;
+  width: 50%;
+  /* 底線依照原始比例寬度*/
+  height: 5px;
+  /* 粗細調整 */
+  background-color: #f4b434;
+  position: absolute;
+  left: 50%;
+  /* 置中 */
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  /* 使其居中 */
+  bottom: -8px;
+  /* 距離文字底部的位置 */
+  border-radius: 10px;
+  /* 圓滑的邊角 */
 }
 
 @media (max-width: 992px) {
