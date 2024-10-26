@@ -12,7 +12,7 @@
   .PT-reserve .sidebar {
     display: none;
   }
-  .PT-reserve .title {
+  .PT-reserve .none {
     display: none;
   }
   .PT-reserve .navbutton {
@@ -32,17 +32,153 @@
 }
 .PT-reserve .right-block .reserve-card .navbutton {
   text-align: end;
+  margin: 30px 0;
+}
+.PT-reserve .right-block .reserve-card .navbutton .btn-bg {
+  display: inline-block;
+  padding: 5px 5px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.PT-reserve .right-block .reserve-card .navbutton .btn-bg .btnn {
+  border: none;
+  border-radius: 5px;
+  color: #f4b13e;
+  background: white;
+  padding: 10px 35px;
+  font-weight: 900;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.08);
+}
+.PT-reserve .right-block .reserve-card .navbutton .btn-bg .btnn .count {
+  font-weight: 500;
+  border: 1px solid #f4b13e;
+  border-radius: 10px;
+  padding: 0 8px;
+}
+.PT-reserve .right-block .reserve-card .navbutton .btn-bg .btnn:active {
+  background: #f5f5f5;
+  color: #ccc;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.PT-reserve .right-block .reserve-card .navbutton .btn-bg .btnn:active .count {
+  border: 1px solid;
 }
 @media (max-width: 430px) {
   .PT-reserve .right-block .reserve-card .navbutton {
     text-align: center;
   }
 }
-.PT-reserve .right-block .reserve-card .detail-card .title {
-  background: #5c6880;
+.PT-reserve .right-block .reserve-card .title {
+  background: #22355c;
+  color: white;
+}
+.PT-reserve .right-block .reserve-card .detail-card {
+  -webkit-box-shadow: 0px 0px 7.3px 2px rgba(161, 161, 161, 0.17);
+          box-shadow: 0px 0px 7.3px 2px rgba(161, 161, 161, 0.17);
+}
+@media (max-width: 768px) {
+  .PT-reserve .right-block .reserve-card .detail-card .main-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.PT-reserve .right-block .reserve-card .detail-card .imgg {
+  max-width: 150px;
+  max-height: 150px;
+}
+.PT-reserve .right-block .reserve-card .detail-card .imgg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+.PT-reserve .right-block .reserve-card .detail-card .text {
+  color: #8a8a8a;
+}
+.PT-reserve .right-block .reserve-card .detail-card .text-1 {
+  font-size: 24px;
+}
+.PT-reserve .right-block .reserve-card .detail-card .text-2 {
+  font-size: 14px;
+  background-color: #547cd7;
+  color: white;
+  padding: 3px 18px;
+  border-radius: 8px;
+}
+.PT-reserve .right-block .reserve-card .detail-card .text-3 {
+  font-size: 16px;
+}
+.PT-reserve .right-block .reserve-card .detail-card .text-4 {
+  font-size: 14px;
+}
+.PT-reserve .right-block .reserve-card .detail-card .btnn-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.PT-reserve .right-block .reserve-card .detail-card .btnn-group .btnn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .PT-reserve .right-block .reserve-card .detail-card .btnn-group .btnn {
+    padding: 5px 8px;
+  }
+}
+.PT-reserve .right-block .reserve-card .detail-card .btnn-group .btnn-1 {
+  background-color: #bfbfbf;
+}
+.PT-reserve .right-block .reserve-card .detail-card .btnn-group .btnn-2 {
+  background-color: #f4b13e;
+}
+.PT-reserve .right-block .reserve-card .detail-card .btnn-group .btnn-3 {
+  background-color: #22355c;
+}
+.PT-reserve .right-block .reserve-card .detail-card .btnn-group-position {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+@media (max-width: 768px) {
+  .PT-reserve .right-block .reserve-card .detail-card .btnn-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    font-size: 14px;
+  }
+  .PT-reserve .right-block .reserve-card .detail-card .btnn-group-position {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 @media (max-width: 430px) {
   .PT-reserve .right-block .reserve-card .detail-card .status {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .PT-reserve .right-block .reserve-card .detail-card {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
